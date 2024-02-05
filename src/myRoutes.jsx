@@ -8,19 +8,19 @@ export const myRoutes = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home></Home>,
+        element: <Home title="Home"></Home>,
       },
       {
         path: "portfolio",
-        element: <Portfolio></Portfolio>,
+        element: <Portfolio title="Portfolio"></Portfolio>,
       },
       {
         path: "about",
-        element: <About></About>,
+        element: <About title="About"></About>,
       },
       {
         path: "contact",
-        element: <Contact></Contact>,
+        element: <Contact title="Contact"></Contact>,
       },
     ],
   },

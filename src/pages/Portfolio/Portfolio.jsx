@@ -5,10 +5,13 @@ import { useEffect, useState } from "react";
 import { img_1, img_2, img_3 } from "../../assets";
 const { portfolio } = styles;
 
-const Portfolio = () => {
+const Portfolio = ({ title }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const images = [img_1, img_2, img_3, img_1, img_2, img_3];
+  useEffect(() => {
+    document.title = title;
+  }, []);
 
   return (
     <div className={`${portfolio} py-5`}>

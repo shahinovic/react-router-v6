@@ -1,9 +1,13 @@
 import styles from "./About.module.css";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import { Col, Container, Row } from "react-bootstrap";
+import { useEffect } from "react";
 const { about } = styles;
 
-const About = () => {
+const About = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, []);
   return (
     <div className={about}>
       <div className="inner">

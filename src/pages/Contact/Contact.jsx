@@ -1,10 +1,13 @@
 import { Container } from "react-bootstrap";
 import { SectionHeading } from "../../components";
 import styles from "./Contact.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const { contact, group, active, button } = styles;
 
-const Contact = () => {
+const Contact = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, []);
   const [formData, setFormData] = useState({
     username: "",
     userAge: "",

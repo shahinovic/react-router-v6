@@ -4,9 +4,13 @@ import { Container } from "react-bootstrap";
 import styles from "./Home.module.css";
 import { svg_1 } from "../../assets";
 import { SectionHeading } from "../../components";
+import { useEffect } from "react";
+const { home, home_bg, section_height, img_container } = styles;
 
-const Home = () => {
-  const { home, home_bg, section_height, img_container } = styles;
+const Home = ({ title }) => {
+  useEffect(() => {
+    document.title = title;
+  }, []);
 
   return (
     <div className={`${home}  ${home_bg}`}>
