@@ -1,0 +1,54 @@
+.contact {
+  margin-top: 152px !important;
+  background-color: #fff;
+  min-height: calc(100vh - 163px) !important;
+}
+
+.contact form {
+  width: 70%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  margin-block-start: 50px !important;
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.group label {
+  color: #1abc9c;
+  height: 27px;
+  padding-top: 27px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.active {
+  padding: 0 !important;
+}
+.group input {
+  border: none;
+  border-bottom: 1px solid rgb(222 226 230);
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 27px;
+}
+
+.button {
+  color: #fff !important;
+  padding: 10px 20px !important;
+  background-color: #16a085 !important;
+  transition: 0.5s ease;
+}
+
+.button:hover {
+  background-color: #1abc9c !important;
+}

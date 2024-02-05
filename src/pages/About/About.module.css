@@ -1,0 +1,8 @@
+.about {
+  margin-top: 152px !important;
+  background-color: #1abc9c;
+  min-height: calc(100vh - 163px) !important;
+  padding-block: 100px;
+  display: grid;
+  place-items: center;
+}

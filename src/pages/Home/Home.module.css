@@ -1,0 +1,16 @@
+.home {
+  margin-top: 152px !important;
+}
+
+.section_height {
+  min-height: calc(100vh - 163px) !important;
+}
+
+.home_bg {
+  background-color: #1abc9c;
+}
+
+.img_container {
+  width: 260px;
+  margin-inline: auto;
+}

@@ -1,0 +1,27 @@
+.portfolio_card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s ease;
+}
+.portfolio_card img {
+  width: 100%;
+  height: 100%;
+}
+.card_hover {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 7rem;
+  color: #fff;
+  background-color: #1abc9ca4;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.portfolio_card:hover .card_hover {
+  opacity: 1;
+}
